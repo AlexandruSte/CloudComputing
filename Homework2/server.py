@@ -76,7 +76,7 @@ class Server(BaseHTTPRequestHandler):
                 item = items[2]
                 try:
                     if Database().instance().find({'nume': item}).count() > 0:
-                        Database().instance().delete_one({'nume': name})
+                        Database().instance().delete_one({'nume': item})
                         return self.respond(200, 'Food deleted with success.')
                     else:
                         return self.respond(404, 'Food not found.')
