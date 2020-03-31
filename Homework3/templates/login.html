@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="{{ url_for('static',filename='css/index.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/navbar.css') }}" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+    <title>Login</title>
+</head>
+<body>
+<ul>
+    <li><a href="/">Home</a></li>
+</ul>
+<div class="main_div">
+    <h2>Login methods</h2>
+    <button onclick="login()">
+        <img alt="Google picture" src=" {{ url_for('static',filename='img/google.jpg') }} "/>
+    </button>
+</div>
+</body>
+<script src="{{ url_for('static',filename='js/login.js') }}"></script>
+</html>

@@ -1,0 +1,20 @@
+body {
+    width: 99%;
+    text-align: center;
+    padding-top: 10%;
+    font-family: 'Lato', 'Arial', sans-serif;
+}
+
+button {
+    margin: 30px auto 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
